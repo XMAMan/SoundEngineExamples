@@ -1,5 +1,5 @@
-SoundEngine-Examples
-#
+# SoundEngine-Examples
+
 This project shows how to use the XMAMan.SoundEngine-NuGet-Package. 
 
 The XMAMan.SoundEngine-NuGet-Package can be used for creating sounds in your games, for creating a audiorecorder or creating a audioplayer.
@@ -34,14 +34,14 @@ which can play and visualize an audiofile.
 
 
 
-Usecases if you want to create a game
-#
+# Usecases if you want to create a game
 
-Case 1: playing backgroundmusic
-##
 
-Case 1 Step 1: Define the backgroundmusic in the MusicMachine-Editor to create a *.music-file
-###
+## Case 1: playing backgroundmusic
+
+
+### Case 1 Step 1: Define the backgroundmusic in the MusicMachine-Editor to create a *.music-file
+
 If you want to play background music, then you can use a midi File as starting point and modify this file or you create your own songs by defining the notes and instruments by your own.
 
 In our case we want to use a midiFile as starting-point and modify this file.
@@ -119,8 +119,8 @@ Save now this file as a *.music-file by pressing the "Save"-Button in the upper 
 
 [background6.music](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/background6.music)
 
-Case 1 Step 2: Use the *.music-file in your game
-###
+### Case 1 Step 2: Use the *.music-file in your game
+
 For this step: Open the AudioOutput-project from here: https://github.com/XMAMan/SoundEngineExamples/tree/master/Source/SoundEngineExamples.sln
 
 If you now want to use the *.music-file in your game-project you have to use the XMAMan.SoundEngine-NuGet-Package and create a SoundGenerator-object. This object will start intern a audio-timer which 
@@ -154,11 +154,11 @@ class ViewModel : IDisposable
 }
 ```
 
-Case 2: play tones that can be held indefinitely and where the frequency is adjustable
-##
+## Case 2: play tones that can be held indefinitely and where the frequency is adjustable
 
-Case 2 Step 1: Define the instrument in the MusicMachine-Editor to create a *.music-file
-###
+
+### Case 2 Step 1: Define the instrument in the MusicMachine-Editor to create a *.music-file
+
 In our next case we want to simulate a ball, which is falling down. Durring the movement there should be a sound, where the pitch is changing. This type of sound have no predefined length because 
 we don't now how far will the ball falling.
 To define how such a sound sounds like we use again the MusicMachine-Editor and create again a *.music-file but now we don't have to define any notes. Start at first the 
@@ -194,8 +194,8 @@ side from the sequencers (11).
 
 This is our created music-file: [movingBall2.music](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/movingBall2.music)
 
-Case 2 Step 2: Use the *.music-file in your game
-###
+### Case 2 Step 2: Use the *.music-file in your game
+
 We have now a *.music-file with two different instruments. To use this in code use again the SoundGenerator-object but instead of using the AddMusicFile-method we are using AddSynthSoundCollection.
 This method returns a IFrequenceToneSnipped-array with two items in our case because we have defined two sequencers. 
 
@@ -265,11 +265,11 @@ movingDownSound2.Dispose();
 }
 ```
 
-Case 3: play tones with a predefined length created by a oscillator-signal-source
-##
+## Case 3: play tones with a predefined length created by a oscillator-signal-source
 
-Case 3 Step 1: Define the instrument and the tonelength in the MusicMachine-Editor to create a *.music-file
-###
+
+### Case 3 Step 1: Define the instrument and the tonelength in the MusicMachine-Editor to create a *.music-file
+
 
 If the ball hits the ground, we want to play a drum-sound. This sound should be defined with the MusicMachine-Editor. So start the editor and create a new session and use the default-settings.
 The sound should sound soft so we use a sinus-signal (1). We also want multiple signalsources so we increase the Count-Slider (4) and change the Pitch (5) a little bit. This will create a 
@@ -284,8 +284,8 @@ single note our *.music-file has now a predefined length and we don't need the s
 
 This is our created music-file: [Drum.music](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Drum.music)
 
-Case 3 Step 2: Use the *.music-file in your game
-###
+### Case 3 Step 2: Use the *.music-file in your game
+
 
 The usage from the ground-hit-sound is similar to the usage from the background-music. Both examples uses a *.music-file as input. The difference is, that the background music contains multiple notes
 and sequencer and the hit-sound has only one sequencer with one note. We are using the GetCopy-method here because we want to create this song for each ball-object so the song can be played 
@@ -324,8 +324,8 @@ class ViewModel : IDisposable
 }
 ```
 
-Case 4: play a simple mp3/wma/wav-file
-##
+## Case 4: play a simple mp3/wma/wav-file
+
 To play a mp3/wma/wav-file you only need to add it to the SoundGenerator with AddSoundFile and you can play it then with Play. If you want it to play mulitple times at the same time then use again 
 the GetCopy-function and call Play for every copy.
 
@@ -373,8 +373,8 @@ This could be a song only created with a single *.wav-file with three different 
 This music file [DrumSound.music](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/DrumSound.music) creates this song: [DrumSound.mp3](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/DrumSound.mp3)
 
 
-Usecases if you want to create a audiorecorder
-#
+# Usecases if you want to create a audiorecorder
+
 For this step: Open the AudioInput-project from here: https://github.com/XMAMan/SoundEngineExamples/tree/master/Source/SoundEngineExamples.sln
 
 If you want to use a audioinput-device, then you have to use the AudioRecorder from the SoundGenerator-object. This will save the data from the microphone in the float-list 'recordData'. If you press
@@ -449,29 +449,29 @@ The sound, which comes from the microphone can be modified before sending it to 
 soundGenerator.AudioRecorder.UseHallEffect = true;
 ```
 
-You can use this demo-application for this cases:
-##
+## You can use this demo-application for this cases:
 
-Case 1: You have a telephone call and want to sound like a robot.
-###
+
+### Case 1: You have a telephone call and want to sound like a robot.
+
 You need two headsets connected to you computer. Headset 1 is placed beside your computer and headset 2 is on your head. In the demoapplication use headset 1 for audiooutput and headset 2 for audioinput.
 Go the the soundsettings on you windows-system and use headset 1 as input-device for your stereomixer. In your telephone-app use stereomix as inputdevice and headset 2 as outputdevice. Activate the 
 robot-effect in the demoapplication from this example here and the other person from your call will hear your voice with the robot-effect.
 
-Case 2: You want to here a video from youtube with hall/robot-effect
-###
+### Case 2: You want to here a video from youtube with hall/robot-effect
+
 You need two headsets connected to you computer. Headset 1 is placed beside your computer and headset 2 is on your head. In the demoapplication use the stereomix as audioinput and headset 2 as audiooutput.
 In the windows-soundsettings use headset 1 as default-outputdevice and the stereomix uses headset 1 as input-source. If you now play a video from youtube then headset 1 is used for output and the 
 stereomixer will use this data as a virtual microphone. The demoapplication from here is using the unmodified audiosignal from youtube and will it modifie and play it on headset 2, which is located on 
 your head. You will hear the youtube-video with changed sound. 
 
-Case 3: You want to record your own voise
-###
+### Case 3: You want to record your own voise
+
 Select your headset/microphone-array as input-device and and use "NoOutput" as output-device. This is necessary otherwise you would hear your own voice about your speakers at the same time as you 
 hear your voice from you mouth. That sounds confusing. Now you can press the record-button and speak. After pressing the button again you can save your audio data as mp3/wav-file.
 
-Usecases if you want to create a audioplayer
-#
+# Usecases if you want to create a audioplayer
+
 For this step: Open the AudioPlayer-project from here: https://github.com/XMAMan/SoundEngineExamples/tree/master/Source/SoundEngineExamples.sln
 
 You can create a audiplayer and visualize the audiodata by doing two steps. Step 1 is that call AddSoundFile which adds the audiodata from a file to the SoundGenerator-object. Then you have two options
@@ -479,7 +479,7 @@ for audio-data-visulisation. Option 1: Show the lowpass-signal with GetLowPassSi
 
 The spectrum analyzer is the black area and the lowpass-signal the image blow:
 
-![AudioPlayer.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioPlayer.png)
+![AudioPlayer.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioPlayer.PNG)
 
 If you hear a low frequence signal, then the left side is changing and if you here a high frequence signal then the right side is changing in the spectrum analyzer. Use by example the 
 background6.mp3-file to see this effect.
