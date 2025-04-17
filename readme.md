@@ -16,7 +16,7 @@ The XMAMan.SoundEngine-NuGet-Package can be used for creating sounds in your gam
 * Usecases if you want to create a audioplayer:
 	* case 6: play a audiofile and visualize the frequency bands
 
-To use this NuGet-Package, you need the MusicMachine-editor where you define your songs. This editor can be found here: https://github.com/XMAMan/SoundEngineExamples/MusicMachine/MusicMachine.exe
+To use this NuGet-Package, you need the MusicMachine-editor where you define your songs. This editor can be found here: https://github.com/XMAMan/SoundEngineExamples/blob/main/MusicMachine/MusicMachine.exe
 
 This editor is needet for creating *.music-files, which can be used from the XMAMan.SoundEngine-NuGet-Package for playing music.
 
@@ -162,7 +162,7 @@ class ViewModel : IDisposable
 In our next case we want to simulate a ball, which is falling down. Durring the movement there should be a sound, where the pitch is changing. This type of sound have no predefined length because 
 we don't now how far will the ball falling.
 To define how such a sound sounds like we use again the MusicMachine-Editor and create again a *.music-file but now we don't have to define any notes. Start at first the 
-[MusicMachine.exe](https://github.com/XMAMan/SoundEngineExamples/MusicMachine/MusicMachine.exe) and click on "Create new session" (1) in the context bar and then on ok (2) in the dialog.
+[MusicMachine.exe](https://github.com/XMAMan/SoundEngineExamples/blob/main/MusicMachine/MusicMachine.exe) and click on "Create new session" (1) in the context bar and then on ok (2) in the dialog.
 
 ![CreateNewSession.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/CreateNewSession.png)
 
