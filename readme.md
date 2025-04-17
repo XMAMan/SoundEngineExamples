@@ -5,13 +5,13 @@ This project shows how to use the XMAMan.SoundEngine-NuGet-Package.
 The XMAMan.SoundEngine-NuGet-Package can be used for creating sounds in your games, for creating a audiorecorder or creating a audioplayer.
 
 * Usecases if you want to create a game:
-	* case 1: playing backgroundmusic. Example: ![marioUnderground.mp3](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/marioUnderground.mp3)
-	* case 2: play tones that can be held indefinitely and where the frequency is adjustable. Example: ![movingDownSound.wma](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/movingDownSound.wma)
-	* case 3: play tones with a predefined length created by a oscillator-signal-source. Example: ![hitGroundSound.wma](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/hitGroundSound.wma)
+	* case 1: playing backgroundmusic. Example: [marioUnderground.mp3](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/marioUnderground.mp3)
+	* case 2: play tones that can be held indefinitely and where the frequency is adjustable. Example: [movingDownSound.wma](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/movingDownSound.wma)
+	* case 3: play tones with a predefined length created by a oscillator-signal-source. Example: [hitGroundSound.wma](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/hitGroundSound.wma)
 	* case 4: play a simple mp3/wma/wav-file
 
 * Usecases if you want to create a audiorecorder:
-	* case 5: use the microphone and change your voice by using effects like hall/delay or sound like a robot. Example: ![RobotAndHallEffect.mp3](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/RobotAndHallEffect.mp3)
+	* case 5: use the microphone and change your voice by using effects like hall/delay or sound like a robot. Example: [RobotAndHallEffect.mp3](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/RobotAndHallEffect.mp3)
 	
 * Usecases if you want to create a audioplayer:
 	* case 6: play a audiofile and visualize the frequency bands
@@ -26,9 +26,9 @@ The project from here contains three wpf-projects to show how to use all cases. 
 
 You can create with the mouse red balls, which are moving up or down and creating sounds during this.
 
-For case 5 there is the AudioInput-project: ![AudioInputProject.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioInputProject.png)
+For case 5 there is the AudioInput-project: ![AudioInputProject.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioInputProject.PNG)
 
-and case 6 is shown by the AudioPlayer-project: ![AudioPlayer.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioPlayer.png)
+and case 6 is shown by the AudioPlayer-project: ![AudioPlayer.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioPlayer.PNG)
 which can play and visualize an audiofile.
 
 
@@ -80,7 +80,7 @@ Your settings should now look like this:
 
 And produces a sound like this:
 
-![background3.mp3](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/background3.mp3)
+[background3.mp3](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/background3.mp3)
 
 This is your music-file after changing PW, Count, SUB, A,D,S: [background3.music](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/background3.music)
 
@@ -89,7 +89,7 @@ For the high chords we want to use a different instrument. To do this we add the
 Press at first on the "Add Midi-File"-Button (1) and change the Y-Zoom-Slider (2) which will only change the visual appearance. So both sequencer should be visible. Use also the
 Zoom-Checkbox (3) which will fit the notes into the view.  The blue marked notes are the accords from this song and we want to use a other instrument for this notes.
 
-![background4.PNG](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/background4.PNG)
+![background4.PNG](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/background4.png)
 
 This is your music-file after adding the mid-file again as second sequencer: [background4.music](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/background4.music)
 
@@ -113,7 +113,7 @@ All your settings should now look like this for the second sequencer:
 
 ![background6.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/background6.png)
 
-And produce this song:  ![background6.mp3](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/background6.mp3)
+And produce this song:  [background6.mp3](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/background6.mp3)
 					
 Save now this file as a *.music-file by pressing the "Save"-Button in the upper right area. You can find the file from this example here:
 
@@ -183,8 +183,8 @@ durring playback.
 You can test the second sound by clicking on the "Play Tone"-Button again. With the Slider below (6) you define the start-frequency. A better way of starting the Test-tone-playback is pressing "A" for the first 
 sequencer and "S" for the second sequencer. Hold this keys pressed.
 
-If you hold "A" then the moving-down-sound sounds like this: ![movingDownSound.wma](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/movingDownSound.wma)
-If you hold "S" then the moving-up-sound sounds like this: ![movingUpSound.wma](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/movingUpSound.wma)
+If you hold "A" then the moving-down-sound sounds like this: [movingDownSound.wma](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/movingDownSound.wma)
+If you hold "S" then the moving-up-sound sounds like this: [movingUpSound.wma](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/movingUpSound.wma)
 
 Hold the "S"-key pressed and then change the Count-Slider (7) a little bit up to increase the signal-source-count and the Pitch-Slider (8) a little bit down. Each signal-source will use a slightly 
 modified frequency. Change also die FreqRamp-Effect (4) durring holding "A" or "S" to here how the sound is changing durring playback. 
@@ -370,7 +370,7 @@ This could be a song only created with a single *.wav-file with three different 
 
 ![DrumSound.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/DrumSound.png)
 
-This music file [DrumSound.music](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/DrumSound.music) creates this song: ![DrumSound.mp3](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/DrumSound.mp3)
+This music file [DrumSound.music](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/DrumSound.music) creates this song: [DrumSound.mp3](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/DrumSound.mp3)
 
 
 Usecases if you want to create a audiorecorder
