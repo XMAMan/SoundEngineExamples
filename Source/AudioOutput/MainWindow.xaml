@@ -1,0 +1,105 @@
+﻿<Window x:Class="AudioOutput.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AudioOutput"
+        mc:Ignorable="d"
+        Title="Demoapplication for using the XMAMan.SoundEngine-NuGet" Height="450" Width="900">
+    <DockPanel Background="AliceBlue">
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Left" >
+            <GroupBox Header="Backgroundmusic">
+                <StackPanel>
+                    <CheckBox Content="IsPlaying" IsChecked="{Binding BackgroundMusicIsRunning}"/>
+                    <CheckBox Content="IsLooping" IsChecked="{Binding BackgroundMusicIsLooping}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Volume"/>
+                        <Slider Minimum="0" Maximum="1" Value="{Binding BackgroundMusicVolume}" Width="50" Margin="0 3"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Speed"/>
+                        <Slider Minimum="0.25" Maximum="5" Value="{Binding BackgroundMusicSpeed}" Width="50" Margin="0 3"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Pitch"/>
+                        <Slider Minimum="-3" Maximum="3" Value="{Binding BackgroundMusicPitch}" Width="50" Margin="0 3"/>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Falling down sound">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Volume"/>
+                        <Slider Minimum="0" Maximum="1" Value="{Binding MovingDownVolume}" Width="50" Margin="0 3"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Pitch"/>
+                        <Slider Minimum="50" Maximum="800" Value="{Binding MovingDownPitch}" Width="50" Margin="0 3"/>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Falling up sound">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Volume"/>
+                        <Slider Minimum="0" Maximum="1" Value="{Binding MovingUpVolume}" Width="50" Margin="0 3"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Pitch"/>
+                        <Slider Minimum="10" Maximum="800" Value="{Binding MovingUpPitch}" Width="50" Margin="0 3"/>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Hit ground sound">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Volume"/>
+                        <Slider Minimum="0" Maximum="1" Value="{Binding HitGroundVolume}" Width="50" Margin="0 3"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Pitch"/>
+                        <Slider Minimum="-3" Maximum="3" Value="{Binding HitGroundPitch}" Width="50" Margin="0 3"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Speed"/>
+                        <Slider Minimum="0.1" Maximum="0.9"  FlowDirection="RightToLeft" Value="{Binding HitGroundSpeed}" Width="50" Margin="0 3"/>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Hit ceiling sound">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Volume"/>
+                        <Slider Minimum="0" Maximum="1" Value="{Binding HitCeilingVolume}" Width="50" Margin="0 3"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Pitch"/>
+                        <Slider Minimum="0.1" Maximum="2" Value="{Binding HitCeilingPitch}" Width="50" Margin="0 3"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Speed"/>
+                        <Slider Minimum="0.1" Maximum="3" Value="{Binding HitCeilingSpeed}" Width="50" Margin="0 3"/>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+            <StackPanel>
+                <Label Content="Left Mouseclick: Create red circle which is falling down" FontWeight="Bold" />
+                <Label Content="Right Mouseclick: Create red circle which is falling up" FontWeight="Bold" />
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Ball Count:"/>
+                    <Label Content="{Binding BallCount}"/>
+                </StackPanel>
+
+            </StackPanel>
+
+        </StackPanel>
+
+        <Border BorderThickness="5"
+                 CornerRadius="15,15,0,0"
+                 BorderBrush="DarkBlue"
+                 Name="MainImageBorder">
+            <Canvas x:Name="canvas1" Background="Yellow" MouseDown="canvas1_MouseDown"/>
+        </Border>
+
+    </DockPanel>
+</Window>
