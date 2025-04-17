@@ -22,13 +22,13 @@ This editor is needet for creating *.music-files, which can be used from the XMA
 
 The project from here contains three wpf-projects to show how to use all cases. For case 1 to 4 there is the AudioOutput-project which looks like this:
 
-![AudioOutputProject.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioOutputProject.png)
+![AudioOutputProject.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioOutputProject.jpg)
 
 You can create with the mouse red balls, which are moving up or down and creating sounds during this.
 
-For case 5 there is the AudioInput-project: ![AudioInputProject.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioInputProject.PNG)
+For case 5 there is the AudioInput-project: ![AudioInputProject.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioInputProject.jpg)
 
-and case 6 is shown by the AudioPlayer-project: ![AudioPlayer.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioPlayer.PNG)
+and case 6 is shown by the AudioPlayer-project: ![AudioPlayer.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioPlayer.jpg)
 which can play and visualize an audiofile.
 
 
@@ -50,13 +50,13 @@ Download the midiFile from this exampleproject from here and save it in a local 
 
 Start at first the MusicMachine.exe and click in the contextbar on "Load mp3/midi/music-File" (1), select *.mid as filetype (2), select the mid-file(3) and click on open (4).
 
-![LoadMidiFile.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/LoadMidiFile.png)
+![LoadMidiFile.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/LoadMidiFile.jpg)
 
 The red rectangles are the notes from this song. You can here the original-midi-sound by pressing the "Play Midi"-Button (see (1) in the image). With (2) you stop the original-midi-output.
 With the "IsPlaying"-checkbox (3) you start the playback by using the synthesizer. (4) will change the volume. Durring the playback you see that the blue line is moving forward. This is the actual
 playposition. If you activate the AutoLoop-checkbox (5), then the blue line will jump automatically to the start if it reached the end of the song. 
 
-![background1.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/background1.png)
+![background1.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/background1.jpg)
 
 This is your music-file after loading the mid-file: [background1.music](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/background1.music)
 
@@ -76,7 +76,7 @@ rectangle-signalsource but with a lower pitch. This is our bass.
 
 Your settings should now look like this:
 
-![background3.PNG](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/background3.PNG)
+![background3.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/background3.jpg)
 
 And produces a sound like this:
 
@@ -89,14 +89,14 @@ For the high chords we want to use a different instrument. To do this we add the
 Press at first on the "Add Midi-File"-Button (1) and change the Y-Zoom-Slider (2) which will only change the visual appearance. So both sequencer should be visible. Use also the
 Zoom-Checkbox (3) which will fit the notes into the view.  The blue marked notes are the accords from this song and we want to use a other instrument for this notes.
 
-![background4.PNG](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/background4.png)
+![background4.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/background4.jpg)
 
 This is your music-file after adding the mid-file again as second sequencer: [background4.music](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/background4.music)
 
 Mark the notes (blue marked in the image) block by block by holding the left mouse down and select with a selectionrectangle the accord-notes in the upper sequencer. After selection press the delete-key to
 remove the selected notes. Do this for every accord-note-block. Do this also for all not-accord-notes in the second sequencer. Then you should get this result:
 
-![background5.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/background5.png)
+![background5.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/background5.jpg)
 
 This is your music-file after removing in the first sequencer the blue marked accord-notes and in the second sequencer the not-accord-notes: [background5.music](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/background5.music)
 
@@ -111,7 +111,7 @@ amplitude-low-frequency-oscillator (6) and change the frequence for this oscilla
 
 All your settings should now look like this for the second sequencer:
 
-![background6.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/background6.png)
+![background6.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/background6.jpg)
 
 And produce this song:  [background6.mp3](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/background6.mp3)
 					
@@ -164,12 +164,12 @@ we don't now how far will the ball falling.
 To define how such a sound sounds like we use again the MusicMachine-Editor and create again a *.music-file but now we don't have to define any notes. Start at first the 
 [MusicMachine.exe](https://github.com/XMAMan/SoundEngineExamples/tree/main/MusicMachine) and click on "Create new session" (1) in the context bar and then on ok (2) in the dialog.
 
-![CreateNewSession.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/CreateNewSession.png)
+![CreateNewSession.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/CreateNewSession.jpg)
 
 We will use a Triangle-Signal (1) and FreqRamp-Effect (2). This effect will automatically decrease the pitch. Move the Ramp-Slider (3) a little bit down to increase to pitch-down-speed. 
 With the Test-Tone-Slider (4) we define the starting-frequency. Move this slider a little bit left the decrease the starting value. Press the "Play Tone"-Button and hold it to hear the sound.
 
-![movingBall1.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/movingBall1.png)
+![movingBall1.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/movingBall1.jpg)
 
 See: [movingBall1.music](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/movingBall1.music)
 
@@ -178,7 +178,7 @@ other sound, where the pitch goes up. We will also save this second sound in the
 on the second sequencer (2) the mark this. We use the Triangle-Signal (3) again and also the FreqRamp-Effect (4). But now we move the Ramp-Slider (5) a little bit up which will increase the pitch
 durring playback.
 
-![movingBall2.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/movingBall2.png)
+![movingBall2.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/movingBall2.jpg)
 
 You can test the second sound by clicking on the "Play Tone"-Button again. With the Slider below (6) you define the start-frequency. A better way of starting the Test-tone-playback is pressing "A" for the first 
 sequencer and "S" for the second sequencer. Hold this keys pressed.
@@ -277,7 +277,7 @@ sinus-sound with choruseffect. The sound should decrease so we use the FreqRamp-
 and the sustain-volume (8) to zero. The decaytime (7) defines the length from our sound. Since the sound is currently very quiet we are using the Gain-Effect (9) and move the gain-slider (10)
 a little bit left.
 
-![Drum.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/Drum.png)
+![Drum.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/Drum.jpg)
 
 We now add a single note by left-clicking in the sequencer-note-area (11). You can move the right side from the rectangle(note) to the left or right to define the key-down-time. With this 
 single note our *.music-file has now a predefined length and we don't need the stop-command durring using in the game. 
@@ -368,7 +368,7 @@ speed.
 
 This could be a song only created with a single *.wav-file with three different pitches.
 
-![DrumSound.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/DrumSound.png)
+![DrumSound.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/DrumSound.jpg)
 
 This music file [DrumSound.music](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/DrumSound.music) creates this song: [DrumSound.mp3](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/SoundExamples/DrumSound.mp3)
 
@@ -479,7 +479,7 @@ for audio-data-visulisation. Option 1: Show the lowpass-signal with GetLowPassSi
 
 The spectrum analyzer is the black area and the lowpass-signal the image blow:
 
-![AudioPlayer.png](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioPlayer.PNG)
+![AudioPlayer.jpg](https://github.com/XMAMan/SoundEngineExamples/raw/refs/heads/main/Data/Images/AudioPlayer.jpg)
 
 If you hear a low frequence signal, then the left side is changing and if you here a high frequence signal then the right side is changing in the spectrum analyzer. Use by example the 
 background6.mp3-file to see this effect.
